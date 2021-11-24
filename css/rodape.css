@@ -1,0 +1,74 @@
+.rodape{
+    background-color: var(--azul-escuro);
+    padding: 6% 0;
+}
+.rodape__caixa{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.rodape__caixa__conteudo{
+    width: 22%;
+}
+.rodape__caixa__conteudo__navegacao__lista{
+    display: flex;
+    flex-direction: column;
+}
+.rodape__caixa__conteudo__navegacao__lista.rodape__caixa__conteudo__navegacao__lista__redes__sociais{
+    flex-direction: row;
+}
+.rodape__caixa__conteudo__navegacao__lista
+.rodape__caixa__conteudo__navegacao__lista__item{
+    margin-bottom: 25px;
+}
+.rodape__caixa__conteudo__navegacao__lista.rodape__caixa__conteudo__navegacao__lista__redes__sociais
+.rodape__caixa__conteudo__navegacao__lista__item{
+    margin: 0 10px;
+}
+.rodape__caixa__conteudo__navegacao__lista__item__ancora{
+    color: var(--cinza-claro);
+    text-decoration: none;
+    transition: all .3s ease;
+}
+.rodape__caixa__conteudo__navegacao__lista__item__ancora:hover{
+    color: var(--azul-desaturado);
+}
+.rodape__caixa__conteudo__navegacao__lista.rodape__caixa__conteudo__navegacao__lista__redes__sociais
+.rodape__caixa__conteudo__navegacao__lista__item
+.rodape__caixa__conteudo__navegacao__lista__item__ancora{
+    font-size: 20px;
+    border: solid 2px var(--cinza-claro);
+    border-radius: 100%;
+    padding: 5px 11px;
+    background: none;
+    transition: all .3s ease;
+}
+.rodape__caixa__conteudo__navegacao__lista.rodape__caixa__conteudo__navegacao__lista__redes__sociais
+.rodape__caixa__conteudo__navegacao__lista__item
+.rodape__caixa__conteudo__navegacao__lista__item__ancora:hover{
+    color: var(--azul-desaturado);
+    border-color: var(--azul-desaturado);
+}
+.rodape__caixa__conteudo__contato__meio__contato{
+    color: var(--cinza-claro);
+    margin-bottom: 25px;
+}
+.fa-phone-alt,
+.fa-envelope{
+    margin-right: 7px;
+}
+@media only screen and (max-width: 480px){
+    .rodape__caixa{
+        flex-direction: column;
+    }
+    .rodape__caixa__conteudo{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .rodape__caixa__conteudo__navegacao__lista.rodape__caixa__conteudo__navegacao__lista__redes__sociais{
+        justify-content: center;
+    }
+}

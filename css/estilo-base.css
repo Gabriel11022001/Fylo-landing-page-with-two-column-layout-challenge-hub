@@ -1,0 +1,27 @@
+:root{
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --azul-escuro: hsl(243, 87%, 12%);
+    --azul-claro: hsl(224, 93%, 58%);
+    --azul-desaturado: hsl(238, 22%, 44%);
+    --ciano-moderado: hsl(170, 45%, 43%);
+    --cinza-claro: rgb(248, 248, 254);
+    --vermelho: red;
+    --cinza-sombra: #E0E4CC;
+    --font-texto-padrao-pagina: 'Open Sans', sans-serif;
+    --font-titulo: 'Raleway', sans-serif;
+}
+body{
+    background-color: var(--branco);
+    font-family: var(--font-texto-padrao-pagina);
+}
+.conteudo__principal__img__curva{
+    width: 100%;
+    margin-top: 30px;
+    transform: translateY(2px);
+}
+@media only screen and (max-width: 480px){
+    .conteudo__principal__img__curva{
+        transform: translateY(3px);
+    }
+}

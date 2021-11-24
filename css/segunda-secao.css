@@ -1,0 +1,90 @@
+.conteudo__principal__segunda__secao{
+    background-color: var(--azul-desaturado);
+    padding: 5% 0;
+}
+.conteudo__principal__segunda__secao__caixa{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.conteudo__principal__segunda__secao__caixa__descricao,
+.conteudo__principal__segunda__secao__caixa__divisao__formulario{
+    width: 45%;
+}
+.conteudo__principal__segunda__secao__caixa__divisao__formulario__form{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.conteudo__principal__segunda__secao__caixa__divisao__formulario__form__campo,
+.conteudo__principal__segunda__secao__caixa__divisao__formulario__form__botao__enviar{
+    margin: 5px 0;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px -1px var(--azul-escuro);
+    font-weight: 400;
+}
+.conteudo__principal__segunda__secao__caixa__divisao__formulario__form__campo{
+    width: 80%;
+    border: solid 1px var(--cinza-claro);
+}
+.conteudo__principal__segunda__secao__caixa__divisao__formulario__form__campo:focus{
+    outline: 0;
+    border: solid 1px var(--azul-claro);
+    box-shadow: 0 0 5px var(--azul-claro);
+}
+.conteudo__principal__segunda__secao__caixa__divisao__formulario__form__botao__enviar{
+    border: none;
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.conteudo__principal__segunda__secao__caixa__divisao__formulario__form__botao__enviar:hover{
+    opacity: 0.7;
+}
+.conteudo__principal__segunda__secao__caixa__descricao__texto{
+    margin: 20px 0;
+}
+.conteudo__principal__segunda__secao__caixa__descricao__titulo{
+    color: var(--branco);
+    font-size: 30px;
+    font-family: var(--font-titulo);
+    font-weight: 700;
+}
+.conteudo__principal__segunda__secao__caixa__descricao__texto{
+    color: var(--cinza-claro);
+    line-height: 25px;
+    font-weight: 400;
+}
+@media only screen and (max-width: 480px){
+    .conteudo__principal__segunda__secao{
+        padding: 17% 0;
+    }
+    .conteudo__principal__segunda__secao__caixa{
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteudo__principal__segunda__secao__caixa__descricao,
+    .conteudo__principal__segunda__secao__caixa__divisao__formulario{
+        width: 100%;
+    }
+    .conteudo__principal__segunda__secao__caixa__descricao__titulo,
+    .conteudo__principal__segunda__secao__caixa__descricao__texto{
+        text-align: center;
+    }
+    .conteudo__principal__segunda__secao__caixa__descricao__titulo{
+        font-size: 25px;
+    }
+    .conteudo__principal__segunda__secao__caixa__divisao__formulario__form{
+        align-items: center;
+    }
+    .conteudo__principal__segunda__secao__caixa__divisao__formulario__form__botao__enviar{
+        width: 80%;
+    }
+}
